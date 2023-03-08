@@ -52,13 +52,14 @@ const Form = () => {
       onSubmit={(event) => {
         event.preventDefault();
         postMessage.mutate({
-          name: session.user?.name as String,
+          name: session.user?.name as string,
           message,
         });
         setMessage("");
       }}
     >
       <input
+        title="message"
         type="text"
         className="rounded-md border-2 border-zinc-800 bg-neutral-900 px-4 py-2 focus:outline-none"
         minLength={2}
