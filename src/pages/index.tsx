@@ -112,10 +112,10 @@ const Home = () => {
             type="button"
             className="mx-auto block rounded-md bg-neutral-800 py-3 px-6 text-center hover:bg-neutral-700"
             onClick={() => {
-              signIn("discord").catch(console.log);
+              signIn().catch(console.log);
             }}
           >
-            Login with Discord
+            Login
           </button>
         )}
         <div className="pt-10">
